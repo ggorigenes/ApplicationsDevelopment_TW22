@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-top: 8px solid #27ae60;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+h1 { color: #2c3e50; margin-bottom: 10px; }
+h2 { color: #27ae60; margin: 25px 0 15px; text-transform: uppercase; font-size: 1.2rem; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th { background-color: #27ae60; color: #555; }
+
+.grade-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.grade-box { text-align: center; }
+.grade-label { font-size: 0.9rem; color: #7f8c8d; text-transform: uppercase; }
+.grade-value { font-size: 2.5rem; font-weight: bold; color: #2c3e50; }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.loop-container {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    word-break: break-all;
+    line-height: 2;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
