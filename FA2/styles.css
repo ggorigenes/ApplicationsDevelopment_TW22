@@ -46,29 +46,60 @@ th, td {
 
 th { background-color: #27ae60; color: #555; }
 
-.grade-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+/* --- Activity 2: Grade Ranking Layout --- */
+.name-header {
+    border: 1px solid #27ae60;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #000;
 }
 
-.grade-box { text-align: center; }
-.grade-label { font-size: 0.9rem; color: #7f8c8d; text-transform: uppercase; }
-.grade-value { font-size: 2.5rem; font-weight: bold; color: #2c3e50; }
+.grade-card-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
 
-.profile-pic {
+.box {
+    border: 1px solid #27ae60;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.rank-box, .grade-box {
     width: 150px;
     height: 150px;
-    background: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font-weight: bold;
+}
+
+.picture-box {
+    width: 250px;
+    height: 250px;
+    font-size: 1.2rem;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.box p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: normal;
 }
 
 .loop-container {
