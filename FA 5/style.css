@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #8fb8de 0%, #a6c0fe 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    display: flex;
+    align-items: center; 
+    margin: 0;
+}
+
+.glass-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.glass-panel {
+    flex: 1;
+    min-width: 320px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(100, 130, 170, 0.2);
+}
+
+.glass-panel h3 {
+    color: #2c3e50; 
+}
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: #2c3e50 !important; /* Dark input text */
+    border-radius: 12px !important;
+    padding: 12px 15px !important;
+}
+
+.glass-input::placeholder {
+    color: rgba(44, 62, 80, 0.5) !important;
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border-color: #90b4ce !important;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5) !important;
+}
+
+.glass-label {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #4a6b8c; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.5);
+    color: #2c3e50;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-glass:hover {
+    background: #90b4ce;
+    color: #ffffff; 
+    border-color: #90b4ce;
+}
+
+.status-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
+}
+
+.status-active {
+    border-left: 5px solid #90b4ce; 
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.status-expired {
+    border-left: 5px solid #b0c4de; 
+    opacity: 0.6;
+}
+
+.cookie-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #4a6b8c;
+    font-weight: 600;
+}
+
+.cookie-val {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
